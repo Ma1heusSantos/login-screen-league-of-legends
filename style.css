@@ -42,7 +42,7 @@
 .input{
     width: 100%;
     background-color: var(--light-grey);
-    border:none;
+    border: 2px solid rgba(0, 0, 0, 0);
     border-radius:5px;
     outline:none;
     font-size: 0.9em;
@@ -52,4 +52,34 @@
 }
 .login-label span{
     position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin:20px;
+    cursor:text;
+    transition: all 200ms ease;
+}
+.input:focus{
+    background-color: var(--whitesmoke);
+    border:2px solid var(--deep-grey);
+}
+.login-label .span-active{
+    font-size:0.7em;
+    margin:8px 10px;
+}
+.login-icon{
+    display: flex;
+    gap:10px;
+    width:100%;
+    margin-top:20px;
+}
+.login-icon img{
+    width:20px;
+}
+.icons-button{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
